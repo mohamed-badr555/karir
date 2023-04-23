@@ -1,0 +1,248 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.nav-link {
+    color: black;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.navbar-nav .nav-link.active {
+    color: #e65f78;
+}
+
+.nav-link:hover {
+    color: #e65f78;
+}
+
+.home {
+    background-image: url("../images/header-bg.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+ .max-width {
+    max-width: 500px;
+}
+
+.home button:hover {
+    background-color: white !important;
+    color: black !important;
+}
+
+.home button {
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.home .setting-icon {
+    background-color: dimgray;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: fixed;
+    left: 0;
+    top: 25%;
+}
+
+.home .mouse-icon {
+    width: 20px;
+    height: 40px;
+    border: 1px solid white;
+    bottom: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    animation: moving 1s alternate 0.5s infinite  ;
+    -webkit-animation: moving 1.5s alternate 1s infinite  ;
+}
+.home .mouse-icon::after{
+    content: "";
+    width: 3px;
+    height: 7px;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    background-color: white;
+    transform: translateX(-50%);
+}
+@keyframes moving {
+    0%{
+        bottom: 5%;
+    }
+    50%{
+        bottom: 7%;
+    }
+    100%{
+        bottom: 5%;
+    }
+}
+.home .home-layer h1::after{
+    content: "A Photographer";
+    animation: typing 2s linear 1s infinite;
+    -webkit-animation: typing 2s linear 1s infinite;
+}
+@keyframes typing {
+    10%{content:"A |"}
+    30%{content:"A P |"}
+    40%{content:"A Pho "}
+    50%{content:"A Phot|"}
+    60%{content:"A Photo|"}
+    70%{content:"A Photog"}
+    80%{content:"A Photogra|"}
+    90%{content:"A Photograph"}
+    100%{content:"A Photographer.|"}
+    
+}
+.up-icon{
+    background-color: #e65f78;
+    position: fixed;
+    bottom: 3%;
+    right: 5%;
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+    z-index: 1000000;
+}
+
+.services i{
+    color: #e65f78;
+}
+.services .services-item{
+    border: 1px solid rgb(232,232,232);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+
+}
+.services h5::after{
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: #e65f78;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.services .services-item:hover h5::after{
+    width: 100px;
+
+}
+/* =============================== */
+.client-content i{
+    color: #e65f78;
+    font-size: 36px;
+}
+.carousel-indicators [data-bs-target] {
+    background-color: #e65f78;
+    width: 15px;
+    height: 5px;
+    border: 1px solid #e65f78;
+    border-radius:5px ;
+    -webkit-border-radius:5px ;
+    -moz-border-radius:5px ;
+    -ms-border-radius:5px ;
+    -o-border-radius:5px ;
+}
+.carousel-indicators .active{
+    width: 20px;
+}
+/* ================================== */
+.nav-pills .nav-link.active{
+    background-color: #e65f78;
+    border-radius:20px ;
+    -webkit-border-radius:20px ;
+    -moz-border-radius:20px ;
+    -ms-border-radius:20px ;
+    -o-border-radius:20px ;
+}
+.nav-pills .nav-link:hover{
+    background-color: #e65f78;
+    border-radius:20px ;
+    -webkit-border-radius:20px ;
+    -moz-border-radius:20px ;
+    -ms-border-radius:20px ;
+    -o-border-radius:20px ;
+    color: white;
+}
+.nav-pills .nav-link{
+    transition: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+}
+.work .work-layer{
+    opacity: 0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.work .work-item:hover .work-layer{
+    opacity: 1;
+}
+.work .work-item:hover .work-text{
+    top: 0 !important;
+}
+.work .work-text{
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.work .work-item:hover img{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.work .work-item img{
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
